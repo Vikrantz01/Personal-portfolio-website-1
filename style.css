@@ -1,0 +1,164 @@
+body {
+    background: #181818;
+    color: #fff;
+    font-family: 'Inter', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    background: #111;
+    border-radius: 24px;
+    box-shadow: 0 4px 32px #000a;
+    padding: 32px 24px;
+}
+.profile-header {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    margin-bottom: 24px;
+}
+.profile-img {
+    width: 140px;
+    height: 140px;
+    border-radius: 20px;
+    object-fit: cover;
+    background: #222;
+    border: 4px solid #232323;
+}
+.about {
+    flex: 1;
+    font-size: 1.1rem;
+    background: #232323;
+    border-radius: 16px;
+    padding: 18px 24px;
+}
+.interests {
+    margin-bottom: 24px;
+}
+.interest-tags span {
+    background: #232323;
+    border-radius: 12px;
+    padding: 8px 18px;
+    margin-right: 10px;
+    font-size: 1rem;
+    display: inline-block;
+    margin-bottom: 8px;
+}
+.experience-tools {
+    display: flex;
+    gap: 24px;
+    margin-bottom: 24px;
+    flex-wrap: wrap;
+}
+.experience {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.card {
+    background: #232323;
+    border-radius: 16px;
+    padding: 18px 24px;
+    margin-bottom: 0;
+}
+.card h4 {
+    margin: 0 0 6px 0;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+.card .date {
+    float: right;
+    font-weight: 400;
+    color: #aaa;
+    font-size: 0.95em;
+}
+.card .role {
+    color: #aaa;
+    font-size: 0.98em;
+    margin-bottom: 8px;
+}
+.card ul {
+    margin: 0;
+    padding-left: 18px;
+    font-size: 0.98em;
+}
+.tools-languages {
+    flex: 1.2;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+.tools h4, .languages h4 {
+    margin: 0 0 8px 0;
+    font-size: 1.05rem;
+}
+.tool-icons span, .lang-icons span {
+    background: #181818;
+    border-radius: 8px;
+    padding: 6px 12px;
+    margin-right: 8px;
+    font-size: 1em;
+    display: inline-block;
+    margin-bottom: 6px;
+}
+.education {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 24px;
+    flex-wrap: wrap;
+}
+.education .card {
+    flex: 1 1 220px;
+}
+.portfolio {
+    margin-bottom: 24px;
+}
+.portfolio-links a {
+    background: #232323;
+    color: #fff;
+    border-radius: 10px;
+    padding: 8px 16px;
+    margin-right: 10px;
+    text-decoration: none;
+    font-size: 1em;
+    display: inline-block;
+    margin-bottom: 8px;
+    transition: background 0.2s;
+}
+.portfolio-links a:hover {
+    background: #333;
+}
+.details {
+    display: flex;
+    gap: 18px;
+    justify-content: center;
+    align-items: center;
+    background: #232323;
+    border-radius: 16px;
+    padding: 14px 0;
+    font-size: 1.05em;
+    margin-top: 18px;
+    flex-wrap: wrap;
+}
+@media (max-width: 700px) {
+    .container {
+        padding: 10px 2vw;
+    }
+    .profile-header {
+        flex-direction: column;
+        gap: 16px;
+    }
+    .experience-tools {
+        flex-direction: column;
+    }
+    .education {
+        flex-direction: column;
+    }
+    .details {
+        flex-direction: column;
+        gap: 8px;
+    }
+}
